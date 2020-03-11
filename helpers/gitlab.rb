@@ -2,8 +2,8 @@ require 'dotenv'
 require 'gitlab'
 require 'json'
 require 'parallel'
-Dotenv.load
 
+Dotenv.load
 AUTHOR_IDS = JSON.parse(ENV['GITLAB_TEAM_IDS'])
 
 Gitlab.configure do |config|

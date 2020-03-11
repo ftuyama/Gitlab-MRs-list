@@ -1,0 +1,60 @@
+{
+    "id": 4267,
+    "iid": 963,
+    "project_id": 15,
+    "title": "Handle api timeout",
+    "description": "Closes TEAM-847",
+    "state": "opened",
+    "created_at": "2020-03-10T09:08:51.161Z",
+    "updated_at": "2020-03-10T10:44:30.912Z",
+    "merged_by": null,
+    "merged_at": null,
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "dev",
+    "source_branch": "TEAM-847-api-timeout",
+    "user_notes_count": 0,
+    "upvotes": 0,
+    "downvotes": 0,
+    "assignee": null,
+    "author": {
+        "id": 787,
+        "name": "Felipe Tuyama",
+        "username": "felipet",
+        "state": "active",
+        "avatar_url": "https://secure.gravatar.com/avatar/c4bdf0e831b9f92affc6caf89a8fbaac?s=80&d=identicon",
+        "web_url": "https://gitlab.com/felipet"
+    },
+    "assignees": [],
+    "source_project_id": 12,
+    "target_project_id": 13,
+    "labels": [
+        "bug"
+    ],
+    "work_in_progress": false,
+    "milestone": null,
+    "merge_when_pipeline_succeeds": false,
+    "merge_status": "can_be_merged",
+    "merge_commit_sha": null,
+    "squash_commit_sha": null,
+    "discussion_locked": null,
+    "should_remove_source_branch": null,
+    "force_remove_source_branch": true,
+    "allow_collaboration": false,
+    "allow_maintainer_to_push": false,
+    "reference": "!9623",
+    "web_url": "https://gitlab.com/team/project/merge_requests/9623",
+    "time_stats": {
+        "time_estimate": 0,
+        "total_time_spent": 0,
+        "human_time_estimate": null,
+        "human_total_time_spent": null
+    },
+    "squash": true,
+    "task_completion_status": {
+        "count": 0,
+        "completed_count": 0
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+}

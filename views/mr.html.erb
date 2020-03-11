@@ -1,0 +1,20 @@
+<div class="container card">
+  <div class="row">
+    <div class="col-9">
+      <a class='black-link' href="<%= merge_request.web_url %>">
+        <h5><%= merge_request.title %></h5>
+      </a>
+      <a class='black-link' href="https://<%= ENV['GITLAB_URL'].split('/')[2] %>/dashboard/merge_requests?scope=all&utf8=%E2%9C%93&state=opened&author_username=<%= merge_request.author.username %>">
+        <img class='circular-image' src="<%= merge_request.author.avatar_url %>" height="24" width="24"><b><%= merge_request.author.name %></b>
+      </a>
+      </div>
+      <div class="col">
+        <p>
+          <%= merge_request.user_notes_count %>
+          <span class="fa fa-comments"></span>
+          <span class="fa fa-<%= merge_request.merge_status == 'can_be_merged' ? 'check' : 'times' %>"></span>
+        </p>
+        <p><%= merge_request.updated_at.split('T').join(' ') %></p>
+      </div>
+  </div>
+</div>

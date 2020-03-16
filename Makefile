@@ -6,3 +6,6 @@ rerun:
 
 print:
 	ruby print.rb
+
+json:
+	ruby utils/keys.rb

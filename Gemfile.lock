@@ -43,7 +43,7 @@ GEM
       ffi (~> 1.0)
     rerun (0.13.0)
       listen (~> 3.0)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rubocop (0.80.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)

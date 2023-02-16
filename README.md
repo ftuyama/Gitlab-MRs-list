@@ -1,25 +1,35 @@
 # Gitlab MR list
 
-Usage:
+Tool to fetch a list of merge requests from your team!
 
-- Setup GITLAB_URL, GITLAB_TOKEN and GITLAB_TEAM_IDS env variables, e.g.:
+## Setup
+
+```bash
+make setup
+```
+
+- You can generate your Gitlab token on: <https://gitlab.trainline.tools/-/profile/personal_access_tokens>
+
+- This will setup GITLAB_URL, GITLAB_TOKEN and GITLAB_DEV_IDS env variables, e.g.:
 
 ```bash
 GITLAB_URL=https://gitlab.com/api/v4
 GITLAB_TOKEN=some-token-here
-GITLAB_TEAM_IDS=[787, 784, 792, 326, 397]
+GITLAB_DEV_IDS=[787, 784, 792, 326, 397]
 ```
 
-- Then run the commands:
+## Execution
 
-```bash
-make print
-```
-
-or
+- You can run it in the terminal:
 
 ```bash
 make run
+```
+
+- Or spin up a web server:
+
+```bash
+make web
 ```
 
 ## Output

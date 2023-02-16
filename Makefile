@@ -1,8 +1,11 @@
+setup:
+	ruby setup.rb
+
 run:
-	ruby server.rb
+	ruby print.rb
 
 rerun:
 	bundle exec rerun server.rb
 
-print:
-	ruby print.rb
+web:
+	ruby server.rb

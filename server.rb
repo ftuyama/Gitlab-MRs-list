@@ -11,14 +11,14 @@ get '/' do
 end
 
 get '/users' do
-  GitlabService.list_users.to_s
+  erb :users, locals: { users: GitlabService.list_users }
 end
 
 get '/mr' do
   erb :mr, locals: { merge_request: GitlabService.fetch_sample_merge_request }
 end
 
-get '/gitlab' do
+get '/mrs' do
   erb :mrs, locals: { merge_requests: GitlabService.fetch_merge_requests }
 end
 

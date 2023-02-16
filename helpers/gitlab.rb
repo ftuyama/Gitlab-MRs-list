@@ -16,10 +16,16 @@ class GitlabService
 
     def list_users
       [0, 1, 2].map do |page|
-        Gitlab.users(page:, per_page: 100).map do |u|
-          [u.id, u.name]
-        end
+        Gitlab.users(page:, per_page: 100)
       end.flatten
+    end
+
+    def fetch_user(username)
+      search_result = Gitlab.user_search(username)
+
+      raise "User #{username} not found!" if search_result.empty?
+
+      search_result[0]
     end
 
     def fetch_users(usernames)

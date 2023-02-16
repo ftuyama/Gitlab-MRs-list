@@ -1,0 +1,6 @@
+<div class="container">
+  <h2>Users</h2>
+  <% users.each do |user| %>
+    <%= erb :user, locals: { user: user } %>
+  <% end %>
+</div>

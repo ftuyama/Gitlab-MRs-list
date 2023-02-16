@@ -1,0 +1,13 @@
+<div class="container card">
+  <div class="row">
+    <div class="col-9">
+      <h3><%= user.username %></h3>
+      <a class='black-link' href="<%= user.web_url %>">
+        <img class='circular-image' src="<%= user.avatar_url %>" height="24" width="24"><b><%= user.name %></b>
+      </a>
+      <a class='black-link' href="https://<%= ENV['GITLAB_URL'].split('/')[2] %>/dashboard/merge_requests?scope=all&utf8=%E2%9C%93&state=opened&author_username=<%= user.username %>">
+        🛠 Merge Requests
+      </a>
+    </div>
+  </div>
+</div>

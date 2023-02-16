@@ -1,13 +1,20 @@
 module InputHelper
-  def get_input
+  def puts_string(string)
+    puts string if !string.empty?
+  end
+
+  def get_input(string = "")
+    puts_string(string)
     gets.chomp
   end
 
-  def get_input_list
+  def get_input_list(string = "")
+    puts_string(string)
     get_input.split(',')
   end
 
-  def get_letter_input
+  def get_letter_input(string = "")
+    puts_string(string)
     gets.chomp.downcase
   end
 

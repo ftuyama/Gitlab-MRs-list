@@ -1,7 +1,7 @@
 require 'dotenv'
 require 'pry'
 require_relative 'helpers/input_helper'
-require_relative 'helpers/gitlab'
+require_relative 'helpers/gitlab_service'
 
 Dotenv.load
 

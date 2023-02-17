@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'pry'
 require 'json'
-require_relative 'helpers/gitlab'
+require_relative 'helpers/gitlab_service'
 
 Tilt.register Tilt::ERBTemplate, 'html.erb'
 set :port, 4000

@@ -1,6 +1,6 @@
 require 'pry'
 require 'colorize'
-require_relative 'helpers/gitlab'
+require_relative 'helpers/gitlab_service'
 require_relative 'helpers/time_helper'
 
 module Terminal
